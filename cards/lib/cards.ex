@@ -1,6 +1,9 @@
 defmodule Cards do
   def create_deck do
-    ["Ace","Two","Three"]
+    values = ["Ace","Two","Three","Four","Five"]
+    suits = ["Spades", "Hearts", "Diamonds", "Clubs"]
+    for value <- values, suit <- suits do
+      "#{value} of #{suit}"
+    end
   end
-  
 end

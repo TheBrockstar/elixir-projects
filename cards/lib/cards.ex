@@ -27,4 +27,11 @@ defmodule Cards do
   def deal(deck, size) do
     Enum.split(deck, size)
   end
+
+  # Take a filename and deck as argument, convert
+  # deck to binary and save that to a file.
+  def save(deck, filename) do
+    binary = :erlang.term_to_binary(deck)
+    File.write(filename, binary)
+  end
 end

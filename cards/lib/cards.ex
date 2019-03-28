@@ -16,5 +16,9 @@ defmodule Cards do
     Enum.shuffle(deck)
   end
 
-
+  # Check if a Card exists within a deck, and
+  # return True it does, False if not
+  def contains?(deck, card) do
+    Enum.member?(deck, card)
+  end
 end

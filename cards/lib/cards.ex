@@ -43,4 +43,12 @@ defmodule Cards do
       {:error, _reason} -> "That file does not exist!"
     end
   end
+
+  # Take a hand size and return a hand and deck of
+  # cards missing the cards in the hand (tuple)
+  def create_hand(size) do
+    Cards.create_deck
+    |> Cards.shuffle
+    |> Cards.deal(size)
+  end
 end

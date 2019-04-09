@@ -1,7 +1,14 @@
 defmodule Cards do
 
-  # Create a deck by iterating through a list of
-  # suits and a list of values
+@moduledoc """
+  Provides methods for creating and handling a deck of cards.
+"""
+
+
+@doc """
+  Create a deck by iterating through a list of suits and a list of values
+"""
+
   def create_deck do
     values = ["Ace","Two","Three","Four","Five"]
     suits = ["Spades", "Hearts", "Diamonds", "Clubs"]

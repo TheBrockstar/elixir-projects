@@ -7,3 +7,4 @@ A Project That Simulates a Deck of Playing Cards, without any GUI.
 
 ### Functions: 
 1. Deal
+ 

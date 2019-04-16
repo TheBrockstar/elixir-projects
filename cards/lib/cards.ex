@@ -39,8 +39,18 @@ defmodule Cards do
 
 
 @doc """
-  Return a hand of cards of a given size and a deck of cards missing the cards in the hand. The `hand_size` argument indicates how many cards should be in the hand.
-"""
+  Return a hand of cards of a given size and a deck of cards missing the cards in the hand. 
+  The `hand_size` argument indicates how many cards should be in the hand.
+
+  ## Examples
+
+      iex> deck = Cards.create_deck
+      iex> { hand, deck } = Cards.deal(deck, 5)
+      iex> hand
+      ["Ace of Spades", "Ace of Hearts", "Ace of Diamonds", "Ace of Clubs", "Two of Spades"]
+
+
+  """
 
 
   def deal(deck, size) do

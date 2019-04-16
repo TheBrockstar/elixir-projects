@@ -39,7 +39,7 @@ defmodule Cards do
 
 
 @doc """
-  Return a hand of cards of a given size and a deck of cards missing the cards in the hand
+  Return a hand of cards of a given size and a deck of cards missing the cards in the hand. The `hand_size` argument indicates how many cards should be in the hand.
 """
 
 
